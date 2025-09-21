@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bíblia Santa — Refúgio Interior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="purplemurasakii.png" alt="Bíblia Santa" class="brand-img">
+      <div>
+        <h1>📖 Bíblia Santa</h1>
+        <p class="tag">Refúgio Interior — Palavra, Salmos e Orações</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Sumário</h2>
+      <nav>
+        <select id="capituloSelect" onchange="mostrarCapitulo()">
+          <option value="">-- Selecione --</option>
+          <option value="1">1 - Auto Ajuda</option>
+          <option value="2">2 - Terapia com o Altíssimo</option>
+          <option value="3">3 - Forte Mudança</option>
+          <option value="4">4 - Salmos Poderosos</option>
+          <option value="5">5 - Descanse em Paz</option>
+          <option value="6">6 - Refúgio Interior</option>
+          <option value="7">7 - Bíblia Santa</option>
+          <option value="8">8 - Salmos Extras</option>
+          <option value="9">9 - Orações do Rosário</option>
+        </select>
+        <button id="btn-home" class="btn" onclick="mostrarHome()">Início</button>
+        <button id="btn-download" class="btn outline" onclick="baixarTXT()">Baixar capítulo</button>
+      </nav>
+    </aside>
+
+    <section class="content">
+      <div id="conteudo" class="content-inner">
+        <div class="card welcome">
+          <h2>Bem‑vindo ao Refúgio</h2>
+          <p>Aqui você encontra seus textos, salmos e orações organizados. Escolha um capítulo no menu à esquerda.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>✨ Bíblia Santa — Criada com fé e inspiração ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
